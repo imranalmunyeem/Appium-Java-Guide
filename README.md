@@ -141,3 +141,7 @@
         --- Microsoft Windows does not support running Appium Inspector.
         --- Appium does not allow the testing for Android versions lower than 4.2.
         --- Appium provides limited support for testing Hybrid applications. E.g., Switching action of application is not possible to test i.e., web app to native app and vice versa.
+
+
+###  ⚫ Is Appium similar to Selenium?
+        --- In its architecture, Appium is an HTTP server written in Node. js that creates and handles multiple WebDriver sessions. Appium starts tests on the device and listens for commands from the main Appium server. It is basically the same as the Selenium server that gets HTTP requests from Selenium client libraries.
