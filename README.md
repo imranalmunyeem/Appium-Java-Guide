@@ -2,8 +2,8 @@
 
 ### Installation Guide
 #### Important notes: 
-            - Always use latest versions of node, npm, with Appium!
-            - Be admin on your Windows!
+            --- Always use latest versions of node, npm, with Appium!
+            --- Be admin on your Windows!
 
 
 #### Step 1: Install Appium using NPM (Appium CLI)
