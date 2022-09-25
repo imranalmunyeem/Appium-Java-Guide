@@ -1,21 +1,20 @@
 # Complete Appium Guide
 
 ### Installation Guide
-Emulator and real device
-Important notes: 
-- Always use latest versions of node, npm, with Appium!
-- Be admin on your Windows!
+#### Important notes: 
+      - Always use latest versions of node, npm, with Appium!
+      - Be admin on your Windows!
 
 
 #### Step 1: Install Appium using NPM (Appium CLI)
 ============================================
--> Commands to check if node and NPM are installed:
-node -v
-npm -v
--> Install node.js (NPM is included) from link - https://nodejs.org/en/download/
--> Command to install Appium using npm: npm install -g appium
--> Command to start Appium: appium
--> Command to uninstall Appium: npm uninstall -g appium
+        -> Commands to check if node and NPM are installed:
+                            node -v
+                             npm -v
+        -> Install node.js (NPM is included) from link - https://nodejs.org/en/download/
+        -> Command to install Appium using npm: npm install -g appium
+        -> Command to start Appium: appium
+        -> Command to uninstall Appium: npm uninstall -g appium
 
 
 #### Step 2: Install Appium using Appium Desktop
