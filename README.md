@@ -7,7 +7,6 @@
 
 
 #### Step 1: Install Appium using NPM (Appium CLI)
-============================================
         -> Commands to check if node and NPM are installed:
                             node -v
                              npm -v
@@ -18,7 +17,6 @@
 
 
 #### Step 2: Install Appium using Appium Desktop
-===========================================
 -> Download and install Appium Desktop from https://appium.io
 
 
