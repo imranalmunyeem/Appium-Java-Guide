@@ -117,7 +117,15 @@
             -> Write command "adb devices"
                         Example: emulator-5554
                 
-                
+
+#### Step 14: Install IDE (Eclipse)
+
+#### Step 15: Create a Maven project and add below dependencies
+                        1. Java Client          --------  https://mvnrepository.com/artifact/io.appium/java-client/8.2.0
+
+
+#### Step 16: Create a Scripted driver session from Java Program, IDE
+             
 ## Notes
 ###  ⚫ What is Appium?
         --- Appium is an open-source framework that allows QAs to conduct automated app testing on different platforms like Android, iOS, and Windows.
