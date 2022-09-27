@@ -218,4 +218,24 @@
 ###  ⚫ What is Appium Inspector?
         --- A GUI inspector for mobile apps and more, powered by a (separately installed) Appium server. Appium Inspector is basically just an Appium client (like WebdriverIO, Appium's Java client, Appium's Python client, etc...) with a user interface. There's an interface for specifying which Appium server to use, which capabilities to set, and then interacting with elements and other Appium commands once you've started a session.
                 
-             
+
+###  ⚫ What Are the Different Types of Mobile Apps?
+	1. Native apps are created for one specific platform or operating system.
+	
+	2. Web apps are responsive versions of websites that can work on any mobile device or OS because they’re delivered using a mobile browser.
+	
+	3. Hybrid apps are combinations of both native and web apps, but wrapped within a native app, giving it the ability to have its own icon or be downloaded from an app store.
+	
+	
+###  ⚫ What Are the Different Types of Mobile Application Testing?
+	 Some top mobile testing types: 
+		---Usability Testing
+		---Performance Testing
+		---Security Testing
+		---Interruption Testing
+		---Manual Testing
+		---Compatibility Testing
+		---Localization Testing
+		---Functional Testing
+		---Installation Testing
+		---Automation Testing
