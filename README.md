@@ -140,9 +140,16 @@
 
 #### Step 17: Create a Scripted driver session from Java Program in Eclipse   // Find it here src/main/java/
 
-
 #### Note: Keep the andrioid studio, virtual device, appium server open so that after ruunning the driver session program it can launch the app in virtua; device.
 
+
+#### Step 18: Launch simulator automatically without launching it on Android studio by below steps
+                        1. Android studio -> AVD manager -> get the device name (N.B: Not the display name)
+                        
+                        2. Set below capabilities
+                                    caps.setCapability("avd","Pixel_3_API_30");                    // it will get the device name from android studio
+		            caps.setCapability("avdLauchTimeout", 180000);              //it will automatically boot up and launch device
+                                    
 
 ## Notes
 ###  ⚫ What is Appium?
