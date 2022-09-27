@@ -8,10 +8,17 @@
             -> Commands to check if node and NPM are installed:
                             node -v
                              npm -v
+                             
             -> Install node.js (NPM is included) from link - https://nodejs.org/en/download/
-            -> Command to install Appium using npm: npm install -g appium
-            -> Command to start Appium: appium
-            -> Command to uninstall Appium: npm uninstall -g appium
+            
+            -> Command to install Appium using npm: 
+                        npm install -g appium
+            
+            -> Command to start Appium: 
+                              appium
+            
+            -> Command to uninstall Appium: 
+                        npm uninstall -g appium
 
 
 #### Step 2: Install Appium using Appium Desktop
@@ -24,8 +31,8 @@
             
             -> JAVA JDK download link: https://www.oracle.com/technetwork/java/javase/downloads/index.html
             
-####  Note: x86 or x64? Go to "Control Panel\System and Security\System" or execute "set pro" in CMD prompt
             
+####  Note: x86 or x64? Go to "Control Panel\System and Security\System" or execute "set pro" in CMD prompt          
             -> Create JAVA_HOME system environment variable and set it to JDK path (without bin folder). 
             Edit PATH system environment variable and add %JAVA_HOME%\bin
             
@@ -84,7 +91,9 @@
             Download link for dummy app:
                   https://github.com/appium/appium/blob/master/sample-code/apps/ApiDemos-debug.apk
 
+
 #### Step 10: Launch Appium Server
+
 
 #### Step 11: Install appium inspector from here
                         https://github.com/appium/appium-inspector/releases
@@ -100,6 +109,7 @@
                         Remote host: localhost
                         Port: 4723
                         Path: /wd/hub
+                        
                         
 #### Step 13: Set appium inspector's require fields
                         1. Launch appium inspector
@@ -120,12 +130,20 @@
 
 #### Step 14: Install IDE (Eclipse)
 
+
 #### Step 15: Create a Maven project and add below dependencies
                         1. Java Client          --------  https://mvnrepository.com/artifact/io.appium/java-client/8.2.0
 
 
-#### Step 16: Create a Scripted driver session from Java Program, IDE
-             
+#### Step 16: Copy and paste the APK file to src/main/resources in the project.
+
+
+#### Step 17: Create a Scripted driver session from Java Program in Eclipse   // Find it here src/main/java/
+
+
+#### Note: Keep the andrioid studio, virtual device, appium server open so that after ruunning the driver session program it can launch the app in virtua; device.
+
+
 ## Notes
 ###  ⚫ What is Appium?
         --- Appium is an open-source framework that allows QAs to conduct automated app testing on different platforms like Android, iOS, and Windows.
