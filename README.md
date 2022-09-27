@@ -150,7 +150,13 @@
                                     caps.setCapability("avd","Pixel_3_API_30");                    // it will get the device name from android studio
 		            caps.setCapability("avdLauchTimeout", 180000);              //it will automatically boot up and launch device
                                     
-
+				    
+#### Step 18: Attaching Appium Inspector to an Existing Driver Session
+			1. Get the session ID by printing it in Eclipse. Use the below line:
+				System.out.println("Session ID:" +driver.getSessionId());
+			
+			2. Open Appium Inspector, Select "Attach to session", input session ID or click on reload sign to select the session. After launching it, it will launch the application on Inspector as well.
+			
 ## Notes
 ###  ⚫ What is Appium?
         --- Appium is an open-source framework that allows QAs to conduct automated app testing on different platforms like Android, iOS, and Windows.
@@ -218,4 +224,24 @@
 ###  ⚫ What is Appium Inspector?
         --- A GUI inspector for mobile apps and more, powered by a (separately installed) Appium server. Appium Inspector is basically just an Appium client (like WebdriverIO, Appium's Java client, Appium's Python client, etc...) with a user interface. There's an interface for specifying which Appium server to use, which capabilities to set, and then interacting with elements and other Appium commands once you've started a session.
                 
-             
+
+###  ⚫ What Are the Different Types of Mobile Apps?
+	1. Native apps are created for one specific platform or operating system.
+	
+	2. Web apps are responsive versions of websites that can work on any mobile device or OS because they’re delivered using a mobile browser.
+	
+	3. Hybrid apps are combinations of both native and web apps, but wrapped within a native app, giving it the ability to have its own icon or be downloaded from an app store.
+	
+	
+###  ⚫ What Are the Different Types of Mobile Application Testing?
+	 Some top mobile testing types: 
+		---Usability Testing
+		---Performance Testing
+		---Security Testing
+		---Interruption Testing
+		---Manual Testing
+		---Compatibility Testing
+		---Localization Testing
+		---Functional Testing
+		---Installation Testing
+		---Automation Testing
