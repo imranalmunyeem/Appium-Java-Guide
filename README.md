@@ -150,7 +150,13 @@
                                     caps.setCapability("avd","Pixel_3_API_30");                    // it will get the device name from android studio
 		            caps.setCapability("avdLauchTimeout", 180000);              //it will automatically boot up and launch device
                                     
-
+				    
+#### Step 18: Attaching Appium Inspector to an Existing Driver Session
+			1. Get the session ID by printing it in Eclipse. Use the below line:
+				System.out.println("Session ID:" +driver.getSessionId());
+			
+			2. Open Appium Inspector, Select "Attach to session", input session ID or click on reload sign to select the session. After launching it, it will launch the application on Inspector as well.
+			
 ## Notes
 ###  ⚫ What is Appium?
         --- Appium is an open-source framework that allows QAs to conduct automated app testing on different platforms like Android, iOS, and Windows.
