@@ -16,13 +16,15 @@ public class CreateDriverSession {
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 3");
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
 		caps.setCapability(MobileCapabilityType.UDID,"emulator-5554");
-		caps.setCapability("avd","Pixel_3_API_30");    // it will get the device name from android studio
-		caps.setCapability("avdLauchTimeout", 180000); //it will automatically boot up and launch device
+		caps.setCapability("newCommandTimeout", 300);
+		//caps.setCapability("avd","Pixel_3_API_30");    // it will get the device name from android studio
+		//caps.setCapability("avdLauchTimeout", 180000); //it will automatically boot up and launch device
 		String appUrl = System.getProperty("user.dir") + File.separator + "src"+ File.separator + "main" + File.separator + "resources"+ File.separator + "ApiDemos-debug.apk";
 		caps.setCapability(MobileCapabilityType.APP,appUrl);
 		
 		URL url = new URL("http://0.0.0.0:4723/wd/hub");
 		AppiumDriver driver = new AndroidDriver(url,caps);
+		System.out.println("Session ID:" +driver.getSessionId());
 		
 }
 	}
