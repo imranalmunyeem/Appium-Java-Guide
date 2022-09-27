@@ -265,15 +265,15 @@
 		---  Xpath should only be used when there is no ID, Name, or accessibility ID assigned to a specific UI element. Although XPath allows for the formulation of complex queries, using XPath is not recommended because it has stability and performance issues.
 			MobileElement computeSumButton = driver.findElementByXPath("(//XCUIElementTypeButton)[1]");
 			
-####	5.Android UI Automator
+####	5. Android UI Automator
 		---  One needs to use the UI Automator API, in particular, the UISelector Class to search for specific elements. Naturally, this makes it a pre-requisite for QAs to have prior knowledge of UISelector API. In Appium, one needs to send the Java code as a string to the server that is executed in the application’s environment which in turn returns the particular elements.
 			String selector = "new UiSelector().text(“Cancel”)).className(“android.widget.Button”))";
 			MobileElement element = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(selector));
 			
-####	6.Android View Tag (Espresso Only)
+####	6. Android View Tag (Espresso Only)
 		--- Similar to Android UI Automator, this is also an Android platform-specific locator. It allows QAs to locate elements using its view tag.
 		
-####	7.iOS UI Automation
+####	7. iOS UI Automation
 		--- This is an iOS platform-specific locator. It enables QAs or developers to use Apple’s Instruments framework to locate elements while automating tests for iOS apps.
 			String selector = "**/XCUIElementTypeCell[`name BEGINSWITH "P"`]/XCUIElementTypeButton[4]";
 			MobileElement element = (MobileElement)
