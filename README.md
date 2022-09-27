@@ -2,14 +2,23 @@
 
 ### Installation Guide
 
+#### Appium official - https://appium.io/docs/en/about-appium/getting-started/?lang=en
+
 #### Step 1: Install Appium using NPM (Appium CLI)
             -> Commands to check if node and NPM are installed:
                             node -v
                              npm -v
+                             
             -> Install node.js (NPM is included) from link - https://nodejs.org/en/download/
-            -> Command to install Appium using npm: npm install -g appium
-            -> Command to start Appium: appium
-            -> Command to uninstall Appium: npm uninstall -g appium
+            
+            -> Command to install Appium using npm: 
+                        npm install -g appium
+            
+            -> Command to start Appium: 
+                              appium
+            
+            -> Command to uninstall Appium: 
+                        npm uninstall -g appium
 
 
 #### Step 2: Install Appium using Appium Desktop
@@ -22,8 +31,8 @@
             
             -> JAVA JDK download link: https://www.oracle.com/technetwork/java/javase/downloads/index.html
             
-####  Note: x86 or x64? Go to "Control Panel\System and Security\System" or execute "set pro" in CMD prompt
             
+####  Note: x86 or x64? Go to "Control Panel\System and Security\System" or execute "set pro" in CMD prompt          
             -> Create JAVA_HOME system environment variable and set it to JDK path (without bin folder). 
             Edit PATH system environment variable and add %JAVA_HOME%\bin
             
@@ -82,6 +91,65 @@
             Download link for dummy app:
                   https://github.com/appium/appium/blob/master/sample-code/apps/ApiDemos-debug.apk
 
+
+#### Step 10: Launch Appium Server
+
+
+#### Step 11: Install appium inspector from here
+                        https://github.com/appium/appium-inspector/releases
+
+
+#### Step 12: Configure Appium Server GUI and Inspector
+####            Go to Appium Server GUI -> Advanced
+                        Server address: localhost
+                        Port: 4723
+                        Allow CORP: yes
+
+####            Go to Appium Inspector
+                        Remote host: localhost
+                        Port: 4723
+                        Path: /wd/hub
+                        
+                        
+#### Step 13: Set appium inspector's require fields
+                        1. Launch appium inspector
+                        2. Select "Automatic Server"
+                        3. Set "Desired Capabilities"
+                                    platformName    --- Android/IOS
+                                    deviceName      --- Input Device Name 
+                                    automationName  --- UiAutomator2                     //appium uses uiautomator2 framewwork to communicate with the android device
+                                    udid            --- Input id here                    //unique identifier for the device
+                                    app             --- input full path of the apk file  //Example: C:\Imran\Testing\Mobile Automation\APK files\ApiDemos-debug.apk
+              
+              
+#### How to get udID?
+            -> Open CMD
+            -> Write command "adb devices"
+                        Example: emulator-5554
+                
+
+#### Step 14: Install IDE (Eclipse)
+
+
+#### Step 15: Create a Maven project and add below dependencies
+                        1. Java Client          --------  https://mvnrepository.com/artifact/io.appium/java-client/8.2.0
+
+
+#### Step 16: Copy and paste the APK file to src/main/resources in the project.
+
+
+#### Step 17: Create a Scripted driver session from Java Program in Eclipse   // Find it here src/main/java/
+
+#### Note: Keep the andrioid studio, virtual device, appium server open so that after ruunning the driver session program it can launch the app in virtua; device.
+
+
+#### Step 18: Launch simulator automatically without launching it on Android studio by below steps
+                        1. Android studio -> AVD manager -> get the device name (N.B: Not the display name)
+                        
+                        2. Set below capabilities
+                                    caps.setCapability("avd","Pixel_3_API_30");                    // it will get the device name from android studio
+		            caps.setCapability("avdLauchTimeout", 180000);              //it will automatically boot up and launch device
+                                    
 
 ## Notes
 ###  ⚫ What is Appium?
@@ -145,3 +213,9 @@
 
 ###  ⚫ Is Appium similar to Selenium?
         --- In its architecture, Appium is an HTTP server written in Node. js that creates and handles multiple WebDriver sessions. Appium starts tests on the device and listens for commands from the main Appium server. It is basically the same as the Selenium server that gets HTTP requests from Selenium client libraries.
+
+
+###  ⚫ What is Appium Inspector?
+        --- A GUI inspector for mobile apps and more, powered by a (separately installed) Appium server. Appium Inspector is basically just an Appium client (like WebdriverIO, Appium's Java client, Appium's Python client, etc...) with a user interface. There's an interface for specifying which Appium server to use, which capabilities to set, and then interacting with elements and other Appium commands once you've started a session.
+                
+             
