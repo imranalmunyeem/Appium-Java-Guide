@@ -9,8 +9,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class CreateDriverSession {
-
-	public static void main(String[] args) throws MalformedURLException {
+	public void driverSession() throws MalformedURLException {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 3");
@@ -28,3 +27,4 @@ public class CreateDriverSession {
 		
 }
 	}
+	
